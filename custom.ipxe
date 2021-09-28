@@ -4,9 +4,7 @@
 ###
 
 :start
-echo Hello world!
-sleep 10
-goto custom_exit
-
-:custom_exit
-exit 0
+item option_one ${space} HBCD PE x64
+:option_one
+kernel https://boot.netboot.xyz/memdisk raw iso
+initrd https://www.hirensbootcd.org/files/HBCD_PE_x64.iso
